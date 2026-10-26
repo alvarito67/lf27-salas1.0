@@ -1,0 +1,12 @@
+{
+  "name": "lf27-salas",
+  "version": "1.0.0",
+  "description": "Relé de salas online de LF27 (WebSocket, sin dependencias)",
+  "main": "relay.js",
+  "private": true,
+  "scripts": {
+    "start": "node relay.js",
+    "probar": "node ../tools/relay_test.js"
+  },
+  "engines": { "node": ">=18" }
+}
