@@ -1,0 +1,14 @@
+
+services:
+  - type: web
+    name: lf27-salas-online
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /salud
+    envVars:
+      - key: DIAG_TOKEN
+        generateValue: true
+      - key: MAX_CLIENTS
+        value: "100"
+      - key: ROOM_TTL_MIN
+        value: "60"
